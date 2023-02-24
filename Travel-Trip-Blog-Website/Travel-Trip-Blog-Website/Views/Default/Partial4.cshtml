@@ -1,0 +1,27 @@
+﻿@using Travel_Trip_Blog_Website.Models.Siniflar
+@model List<Blog>
+
+
+<div class="box-left">
+    @foreach (var item in Model)
+    {
+        <div class="bot-img">
+            <img src="@item.BlogResmi" alt="" style="width:150px;height:75px;" />
+        </div>
+        <div class="bot-desc">
+            <p>
+                @if (item.Aciklama.Length < 50)
+                {@item.Aciklama }
+            else
+            { @item.Aciklama.Substring(0, 50)}...
+            </p>
+
+        </div>
+
+        <div class="clear"></div>
+    }
+
+</div>
+
+
+

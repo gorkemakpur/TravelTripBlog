@@ -1,0 +1,15 @@
+﻿@model Travel_Trip_Blog_Website.Models.Siniflar.Yorumlar
+
+<div class="content-form">
+    <h3>Yorum Bırak</h3>
+    
+    <form method="post">
+        <input type="hidden" placeholder="ID" name="BlogID" value="@ViewBag.idDegeri" readonly/>
+        <input type="text" placeholder="Kullanici Adınız" name="KullaniciAdi" required />
+        <input type="text" placeholder="Email" name="Mail" required />
+        <textarea name="Yorum" placeholder="Yorum"></textarea>
+        <button class="btn btn-success">Gönder</button>
+    </form>
+</div>
+
+
